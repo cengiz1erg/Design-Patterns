@@ -1,0 +1,13 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\AbstractFactoryV1Lib\AbstractFactoryV1Lib.csproj" />
+    <ProjectReference Include="..\AbstractFactoryV3Lib\AbstractFactoryV1Lib.csproj" />
+  </ItemGroup>
+
+</Project>

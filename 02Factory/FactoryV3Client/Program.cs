@@ -11,7 +11,6 @@ namespace FactoryV3Client
             ILoggerFactory loggerFactory = loggerManager.CreateFactory(LogType.DbLogger);
             ILogger logger = loggerFactory.Create();
             Console.WriteLine(logger.Log("Selam"));
-
         }
     }
 }
