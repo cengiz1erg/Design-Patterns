@@ -1,6 +1,7 @@
 ﻿using BuilderV1.v1;
 using BuilderV1.V2;
 using BuilderV1.v3;
+using BuilderV1.v4;
 using System;
 
 namespace BuilderV1Client
@@ -26,7 +27,12 @@ namespace BuilderV1Client
 
             //-------------------------------------------------------
 
-            Araba araba =  Araba.GetArabaBuilder().BuildAraba("BMV", "i3");
+            //Araba araba =  Araba.GetArabaBuilder().BuildAraba("BMV", "i3");
+
+            //-------------------------------------------------------
+
+            IComputerBuilder computerBuilder = new ComputerBuilder();
+            var computer = computerBuilder.BuildCPU(5).BuildMotherboard("MOM").Build();
 
             Console.ReadKey();
         }
